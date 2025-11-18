@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+const repoLink = "https://github.com/softmaximalist/PostureCorrector";
+---
+
+<header class="flex justify-between items-center px-25 py-4 bg-red-50 fixed top-0 left-0 right-0">
+    <a href="#top" class="flex items-center space-x-2">
+        <img src="/icon.svg" alt="Logo of the PostureCorrector App" class="size-10"/>
+        <span class="text-4xl font-semibold text-gray-700">PostureCorrector</span>
+    </a>
+    <nav>
+        <ul class="flex space-x-8">
+            <li><a href="#features" class="hover:text-red-400">Features</a></li>
+            <li><a href="#instructions" class="hover:text-red-400">Instructions</a></li>
+            <li><a href="faq" class="hover:text-red-400">FAQ</a></li>
+            <li><a href="#about" class="hover:text-red-400">About</a></li>
+            <li><a href="#contact" class="hover:text-red-400">Contact</a></li>
+        </ul>
+    </nav>
+    <a href={repoLink} target="_blank" class="flex space-x-2 px-6 py-2 items-center border-2 border-gray-600 rounded-xl hover:bg-red-300">
+        <img src="/github-mark.svg" alt="Github Logo" class="size-6">
+        <span>Source Code</span>
+    </a>
+</header>
