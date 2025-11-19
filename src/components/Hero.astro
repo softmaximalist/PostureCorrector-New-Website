@@ -5,12 +5,13 @@ import captureTabImage from "../assets/posture_corrector_capture.png";
 const chromeLink = "https://chromewebstore.google.com/detail/posturecorrector-ai-postu/glbckpboobaemcfljiijgndjlkcokppi"
 ---
 
-<div class="flex flex-col mx-80 my-60 items-center">
+<div class="flex flex-col mx-80 my-40 items-center">
+    <img src="/icon.svg" alt="Logo of PostureCorrector" class="size-30 mb-15 drop-shadow-2xl drop-shadow-red-400/80">
     <div class="text-7xl font-bold text-gray-800">You can finally</div>
     <div class="text-7xl font-bold text-gray-800">sit <span class="text-red-500">straight</span></div>
-    <div class="mt-15 text-xl">PostureCorrector is a lightweight browser extension that accurately detects</div>
+    <div class="mt-10 text-xl">PostureCorrector is a lightweight browser extension that accurately detects</div>
     <div class="text-xl">slouching in real-time and alerts users through desktop notifications</div>
-    <a href={chromeLink} target="_blank" class="mt-15 px-7 py-3 bg-red-500/90 hover:bg-red-600 text-lg font-semibold rounded-lg text-white">Add to Your Browser</a>
+    <a href={chromeLink} target="_blank" class="mt-10 px-7 py-3 bg-red-500/90 hover:bg-red-600 text-lg font-semibold rounded-lg text-white">Add to Your Browser</a>
 </div>
 <div class="items-center m-50">
     <Image src={captureTabImage} alt="A screenshot of the capture tab" loading="lazy" class="rounded-2xl border-2 border-gray-600"/>
