@@ -1,0 +1,76 @@
+---
+import '../styles/global.css';
+const repoLink = "https://github.com/softmaximalist/PostureCorrector";
+---
+
+<div id="faq" class="mx-70 mb-40 text-gray-800 scroll-mt-25">
+    <span class="text-5xl font-bold flex flex-col items-center">Frequently Asked Questions</span>
+    <div class="flex flex-col justify-center">
+        <ul class="text-base/5 mt-20 space-y-6">
+            <li class="flex border-2 border-gray-600 rounded-2xl px-10 pt-10 pb-5">
+                <div>
+                    <div class="font-bold mb-4 text-xl">
+                        The extension is not working. What can I do?
+                    </div>
+                    <div>
+                        It is very likely that the permissions required by the extension are probably not granted. 
+                        Follow the instructions below to grant the required permissions. Once you 
+                        set the required permissions, the extension should keep working without further
+                        troubleshooting required.
+                        <ol class="mx-5 mt-5 list-decimal">
+                            <li>Go to your browsers "Manage extensions" page.</li>
+                            <li>Find the PostureCorrector extension and click on the "Details" button.</li>
+                            <li>Click on "Site settings".</li>
+                            <li>Select "Allow" for the camera permission.</li>
+                            <li>Select "Allow" for the notifications permission.</li>
+                        </ol>
+                    </div>
+                </div>
+            </li>
+            <li class="flex border-2 border-gray-600 rounded-2xl px-10 pt-10 pb-5">
+                <div>
+                    <div class="font-bold mb-4 text-xl">
+                        I am worried about my privacy. How can I trust this extension?
+                    </div>
+                    <div>
+                        <ul class="mx-5 mt-7 list-disc space-y-2">
+                            <li>
+                                PostureCorrector is open source. The source code is publicly 
+                                available on <a href={repoLink} target="_blank" class="text-red-500 font-semibold">GitHub</a> for review.
+                            </li>
+                            <li>
+                                The extension has been listed on the Chrome Web Store for more than a year and have many active users.
+                                There have been no negative review or complaint about privacy related issues. 
+                            </li>
+                            <li>
+                                The PostureCorrector extension runs entirely on your local machine. Your webcam footage, user 
+                                statistics, etc are stored on your browser that only you can access. Thus, extension works without any
+                                internet connection.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="flex border-2 border-gray-600 rounded-2xl px-10 pt-10 pb-5">
+                <div>
+                    <div class="font-bold mb-4 text-xl">
+                        Do you have any tips about PostureCorrector?
+                    </div>
+                    <div>
+                        Yes, there are some small tips that would make your experience much better!
+                        <ul class="mx-5 mt-5 list-disc space-y-2">
+                            <li>
+                                If you move your webcam, computer, monitor, or your position slightly, go to the 
+                                open browser tab (capture page) and save your new best posture. 
+                            </li>
+                            <li>
+                                If the extension is slowing down your browser or the posture detection accuracy is 
+                                not good, you can configure the extension on the settings page. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
