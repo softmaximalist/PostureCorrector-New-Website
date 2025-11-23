@@ -7,23 +7,27 @@ const githubLink = "https://github.com/softmaximalist";
 const youtubeLink = "https://www.youtube.com/@softmaximalist";
 ---
 
-<div id="about" class="mx-80 mb-40 text-gray-800 scroll-mt-25">
-    <span class="text-5xl font-bold flex flex-col items-center">Who is the developer?</span>
-    <div class="mt-15 flex items-center gap-15">
-        <div class="w-1/5">
-            <Image src={pfpImage} alt="Profile of the developer" class="rounded-full border-4 border-red-400 size-40">
+<div id="about" class="px-6 lg:mx-80 mb-20 lg:mb-40 text-gray-800 scroll-mt-25">
+    <span class="text-3xl lg:text-5xl font-bold flex flex-col items-center text-center">
+        Who is the developer?
+    </span>
+    
+    <div class="mt-10 lg:mt-15 flex flex-col lg:flex-row items-center gap-8 lg:gap-15">
+        <div class="w-full lg:w-1/5 flex justify-center lg:block">
+            <Image src={pfpImage} alt="Profile of the developer" class="rounded-full border-4 border-red-400 size-32 lg:size-40 object-cover">
         </div>
-        <div class="w-4/5 text-xl">
+        
+        <div class="w-full lg:w-4/5 text-lg lg:text-xl text-center lg:text-left">
             I am a programmer and a professional sloucher with 20+ years of experience in 
             slouching. If you liked PostureCorrector, please consider leaving a review on the 
             <a href={repoLink} target="_blank" class="text-red-500 font-semibold">Chrome Web Store</a>
             and/or giving a star to the
             <a href={repoLink} target="_blank" class="text-red-500 font-semibold">GitHub repository</a>.
-            <div class="flex flex-row items-center ml-15 mt-5 space-x-5">
-                <a href={githubLink} target="_blank">
+            <div class="flex flex-row items-center justify-center lg:justify-start mt-6 lg:mt-5 space-x-5">
+                <a href={githubLink} target="_blank" class="hover:opacity-75 transition-opacity">
                     <img src="/github.svg" alt="Github Logo" loading="lazy" class="size-7">
                 </a>
-                <a href={youtubeLink} target="_blank" aria-label="Visit my YouTube channel">
+                <a href={youtubeLink} target="_blank" aria-label="Visit my YouTube channel" class="hover:opacity-75 transition-opacity">
                     <svg class="size-7 fill-gray-700 self-center" viewBox="0 0 28.57 20" aria-hidden="true">
                         <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z"></path>
                         <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white"></path>

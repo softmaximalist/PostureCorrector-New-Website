@@ -5,14 +5,21 @@ import captureTabImage from "../assets/capture.png";
 const chromeLink = "https://chromewebstore.google.com/detail/posturecorrector-ai-postu/glbckpboobaemcfljiijgndjlkcokppi"
 ---
 
-<div class="flex flex-col mx-80 my-40 items-center">
-    <img src="/icon.svg" alt="Logo of PostureCorrector" class="size-30 mb-15 drop-shadow-2xl drop-shadow-red-400/80">
-    <div class="text-7xl font-bold text-gray-800">You can finally</div>
-    <div class="text-7xl font-bold text-gray-800">sit <span class="text-red-500/90">straight</span></div>
-    <div class="mt-10 text-xl">PostureCorrector is a lightweight browser extension that accurately detects</div>
-    <div class="text-xl">slouching in real-time and alerts users through desktop notifications</div>
-    <a href={chromeLink} target="_blank" class="mt-10 px-7 py-3 bg-red-500/90 hover:bg-red-600 text-lg font-semibold rounded-lg text-white">Add to Your Browser</a>
+<div class="flex flex-col px-6 mt-10 mb-10 lg:mx-80 lg:my-20 items-center text-center">
+    <img src="/icon.svg" alt="Logo of PostureCorrector" class="size-20 lg:size-30 mb-8 lg:mb-15 drop-shadow-2xl drop-shadow-red-400/80">
+    <div class="text-4xl lg:text-7xl font-bold text-gray-800">You can finally</div>
+    <div class="text-4xl lg:text-7xl font-bold text-gray-800">sit <span class="text-red-500/90">straight</span></div>
+    <div class="mt-6 lg:mt-10 text-lg lg:text-xl max-w-2xl lg:max-w-none">
+        PostureCorrector is a lightweight browser extension that accurately detects
+    </div>
+    <div class="text-lg lg:text-xl max-w-2xl lg:max-w-none">
+        slouching in real-time and alerts users through desktop notifications
+    </div>
+    <a href={chromeLink} target="_blank" class="mt-8 lg:mt-10 px-7 py-3 bg-red-500/90 hover:bg-red-600 text-lg font-semibold rounded-lg text-white">
+        Add to Your Browser
+    </a>
 </div>
-<div class="items-center m-50">
-    <Image src={captureTabImage} alt="A screenshot of the capture tab" loading="lazy" class="rounded-2xl border-2 border-gray-600"/>
+
+<div class="flex justify-center m-6 lg:m-50">
+    <Image src={captureTabImage} alt="A screenshot of the capture tab" loading="lazy" class="rounded-2xl border-2 border-gray-600 w-full h-auto shadow-xl"/>
 </div>

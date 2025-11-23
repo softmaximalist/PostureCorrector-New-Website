@@ -3,23 +3,25 @@ import "../styles/global.css";
 const repoLink = "https://github.com/softmaximalist/PostureCorrector";
 ---
 
-<header class="flex justify-between items-center px-20 py-4 fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-10">
-    <a href="/#top" class="flex items-center space-x-2">
-        <img src="/icon.svg" alt="Logo of the PostureCorrector App" class="size-9"/>
-        <span class="text-3xl font-semibold text-gray-700">PostureCorrector</span>
-    </a>
-    <nav>
-        <ul class="flex text-md font-semibold space-x-8">
-            <li><a href="/#features" class="inline-block hover:text-red-400">Features</a></li>
-            <li><a href="/#instructions" class="inline-block hover:text-red-400">Instructions</a></li>
-            <li><a href="/#faq" class="inline-block hover:text-red-400">FAQ</a></li>
-            <li><a href="/#about" class="inline-block hover:text-red-400">About</a></li>
-            <li><a href="/#contact" class="inline-block hover:text-red-400">Contact</a></li>
-            <li><a href="/release-notes" class="inline-block hover:text-red-400">Release Notes</a></li>
-        </ul>
-    </nav>
-    <a href={repoLink} target="_blank" class="flex space-x-2 px-6 py-2 items-center border-2 border-gray-600 rounded-xl hover:bg-red-300/50">
-        <img src="/github.svg" alt="Github Logo" class="size-5">
-        <span class="text-md font-medium">Source Code</span>
-    </a>
+<header class="bg-white border-b border-gray-200">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 py-4 md:px-20 gap-4 md:gap-0">
+        <a href="/#top" class="flex items-center space-x-2">
+            <img src="/icon.svg" alt="Logo" class="size-9"/>
+            <span class="text-3xl font-semibold text-gray-700">MyExtension</span>
+        </a>
+        <nav>
+            <ul class="flex flex-wrap justify-center gap-4 md:gap-8 text-md font-semibold">
+                <li><a href="/#features" class="hover:text-red-400">Features</a></li>
+                <li><a href="/#instructions" class="hover:text-red-400">Instructions</a></li>
+                <li><a href="/#faq" class="hover:text-red-400">FAQ</a></li>
+                <li><a href="/#about" class="hover:text-red-400">About</a></li>
+                <li><a href="/#contact" class="hover:text-red-400">Contact</a></li>
+                <li><a href="/release-notes" class="hover:text-red-400">Release Notes</a></li>
+            </ul>
+        </nav>
+        <a href={repoLink} target="_blank" class="flex space-x-2 px-6 py-2 items-center border-2 border-gray-600 rounded-xl hover:bg-red-300/50">
+            <img src="/github.svg" alt="Github Logo" class="size-5">
+            <span class="text-md font-medium">Source Code</span>
+        </a>
+    </div>
 </header>
