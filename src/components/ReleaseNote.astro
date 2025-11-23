@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+---
+
+<div class="mx-80 mb-30">
+    <div class="mt-30 mb-20 text-5xl text-center font-bold text-gray-800">
+        Release Notes
+    </div>
+    <div class="text-lg">
+        <div class="text-3xl font-bold my-10 text-left text-red-500">
+            PostureCorrector v1.1.0
+        </div>
+        <div class="text-left space-y-10">
+            <p>
+                This version is the second release of PostureCorrector. While the core computer vision
+                algorithm remains the same, two major changes have been introduced. First, the user interface 
+                and user experience (UI/UX) have undergone drastic improvements. These changes provide a much
+                smoother and customized experience for all users. Second, the internal implementation of the extension 
+                have been optimized, resulting in a much smaller extension size and more efficient processing of video frames. 
+                Lastly, critical bugs related to user statistics calculation have been fixed.
+            </p>
+            
+            <div>
+                <h2 class="font-bold m-0 p-0">UI/UX: </h2> 
+                <p>
+                    The previous popup page was too cluttered, causing the following issues:
+                    <ul class="mx-6 my-5 list-disc">
+                        <li>Users had to scroll down to click the "Save Best Posture" button.</li>
+                        <li>After switching to the capture page, users had to reopen the popup page to access the "Save Best Posture" button again.</li>
+                    </ul>
+                    To resolve this, a dedicated settings page have been created for configuration options that users do not frequently change. The 
+                    posture detection frequency settings have been moved to this new settings page. Additionally, the "Save Best Posture" 
+                    button has been moved to the capture page. This creates a clear separation of functionality between the popup 
+                    page, the capture page, and the settings page. Users can now perform tasks with less page switching and button fewer clicks. The
+                    navigation inside the popup has also been redesigned to provide more compact and assessible links for navigation between the extension 
+                    pages and the official website. Finally, the warning method where browser tab gets blurred has been removed. Implementing this feature 
+                    required access to all browser tabs, which is a powerful permissions. Even though PostureCorrector never misused this permission, it was
+                    a security and privacy concern for users and deterred potential new users. Moreover, the feature was not reliable. Some tabs blurred 
+                    immediately while others required a refresh. As a result, the feature became more distracting than helpful. Users now recieve warnings
+                    only through desktop notifications. This is a simpler, less instrusive option that does not require powerful permissions.
+                </p>
+            </div>            
+            
+            <div>
+                <h2 class="font-bold m-0 p-0">Performance Optimization: </h2> 
+                <p>
+                    The most noticeable change is the significantly reduced extension size. In the uncompressed form used by the browser, the previous
+                    version was 36.6 MB, while the new version is 15.8 MB. This is a reduction of 20.8 MB, or 56%. 
+                </p>
+            </div>
+            
+            <div>
+                <h2 class="font-bold m-0 p-0">User Statistics Bug Fix: </h2> 
+                <p>
+                    PostureCorrector updates user statistics quite frequently during each session to avoid losing any value insight. Typically, statistics are recorded 
+                    in intervals of 10 minutes or less. The previous version contained a bug that could cause the total duration, duration for a time window, or duration 
+                    for an activity type being "undefined". Once this occurred, future statistics would also become invalid because "undefined" cannot be combined with 
+                    numeric values. This bug has now been fixed, and user statistic calculations should much more robust and accurate.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
