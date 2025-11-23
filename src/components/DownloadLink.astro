@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+const chromeWebStoreLink = "https://chromewebstore.google.com/detail/posturecorrector-ai-postu/glbckpboobaemcfljiijgndjlkcokppi";
+const mozillaAMOLink = "https://chromewebstore.google.com/detail/posturecorrector-ai-postu/glbckpboobaemcfljiijgndjlkcokppi";
+---
+
+<div class="mx-10 lg:mx-60 mb-10 lg:mb-20 lg:-my-17">
+    <div class="mt-10 lg:mt-30 mb-10 text-3xl lg:text-5xl text-center font-bold text-gray-800">
+        Add <span class="text-red-500/90">PostureCorrector</span> to Your Browser
+    </div>
+    <p class="text-lg lg:text-xl">
+        PostureCorrector is available for download from the Chrome Web Store and the Mozilla Add-ons website. Most 
+        browsers allow users to install browser extensions from either of these two platforms. Please note that 
+        depending on your browser, the process of installing and using extensions from these two platforms might be
+        different. If you have trouble adding PostureCorrector to your browser or PostureCorrector is not available on 
+        your browser, feel free to <a href="\#contact" class="text-red-500/90 font-bold">contact me</a>. I will do my 
+        best to help you.
+    </p>
+    
+    <div class="flex flex-col lg:flex-row justify-between">
+        <div class="mt-20 flex flex-col items-center">
+            <div class="flex flex-row space-x-5">
+                <img src="/chrome.svg" alt="Google Chrome Logo" loading="lazy" class="size-15">
+                <img src="/edge.svg" alt="Microsoft Edge Logo" loading="lazy" class="size-15">
+                <img src="/brave.svg" alt="Brave Browser Logo" loading="lazy" class="size-15">
+                <img src="/vivaldi.svg" alt="Vivaldi Logo" loading="lazy" class="size-15">
+                <img src="/opera.svg" alt="Opera Logo" loading="lazy" class="size-15">
+            </div>
+            <a href={chromeWebStoreLink} target="_blank" class="flex items-center mt-8 lg:mt-10 px-7 py-3 bg-red-500/90 hover:bg-red-600 text-lg font-semibold rounded-lg text-white">
+                Add to Your Browser
+            </a>
+        </div>
+        <div class="mt-20 flex flex-col items-center">
+            <div class="flex flex-row space-x-5">
+                <img src="/firefox.svg" alt="Firefox Logo" loading="lazy" class="size-15">
+                <img src="/zen.svg" alt="Zen Logo" loading="lazy" class="size-15">
+            </div>
+            <a href={mozillaAMOLink} target="_blank" class="mt-8 lg:mt-10 px-7 py-3 bg-red-500/90 hover:bg-red-600 text-lg font-semibold rounded-lg text-white">
+                Add to Your Browser
+            </a>
+        </div>
+    </div>
+</div>
