@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+lite-youtube {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9; /* Enforces the standard YouTube ratio */
+    background-size: cover !important; /* Ensures the poster image fills the space */
+    display: block !important;
+    margin: 0 auto;
+}
