@@ -3,7 +3,7 @@ This is the new website for the PostureCorrector browser extension. It is made w
 
 ---
 
-## Folder Structure
+## 📂 Folder Structure
 
 ```text
 ├── astro.config.mjs
